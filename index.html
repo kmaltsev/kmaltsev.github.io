@@ -94,9 +94,10 @@
             <font color = "yellow">NEUTRON STAR AND BLACK HOLE FORMATION FROM IRON CORE COLLAPSE:</font>
             <hr { width:100%; height:1px; background: #fff }>
             
-            <? <embed src="case-A-ffmap.pdf" width="100px" frameborder="0" /> 
+            <? <embed src="case-A-ffmap.pdf" width="100px" frameborder="0" />
+            <center>
             <img src="single-star.png" width = 550 alt = "centered image">
-            
+            </center>
             <p>
               Massive stars undergoing iron core collapse at the end of their evolution either explode and leave a neutron star behind, or explode and leave a black hole
               behind, or do not explode and form a black hole quietly. The outcome of 3D core collapse supernova (CCSN) simulation depends on the structure of the stellar 
@@ -138,7 +139,7 @@
               parameter grids is prohibitively expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
               prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between cost-efficiency and accuracy. 
               We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces the evolution of stars from zero age main sequence all the way 
-              to the end of core helium burning while covering a mass range from 0.65 to 300 M . The feedforward neural network regression model (first solution) that we train to predict stellar
+              to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. The feedforward neural network regression model (first solution) that we train to predict stellar
               surface variables can make millions of predictions, sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor 
               interpolation algorithm (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all stellar variables 
               evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA Isochrones and Stellar Tracks (Choi et al., 2016) data set, 
