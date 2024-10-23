@@ -122,7 +122,23 @@
               <figcaption>Image caption</figcaption>
             </figure>
             <p>
-              text here
+              <center>
+              We present a time-domain model for the gravitational waves emitted by equal-mass binary neutron star merger remnants i.e., quasi-stable hypermassive
+              neutron stars, for a fixed equation of state. We construct a large set of numerical relativity simulations for a consistent with current constraints, 
+              totaling 157 equal-mass binary neutron star merger configurations. The gravitational-wave model is constructed using the supervised learning method of K-nearest 
+              neighbor regression. As a first step toward developing a general model with supervised learning methods that accounts for the dependencies on equation of state and 
+              the binary masses of the system, we explore the impact of the size of the dataset on the model. We assess the accuracy of the model for a varied dataset size and 
+              number density in total binary mass. Specifically, we consider five training sets of {20, 40, 60, 80, 100} simulations uniformly distributed in total binary mass. 
+              We evaluate the resulting models in terms of faithfulness using a test set of 30 additional simulations that are not used during training and which are equidistantly 
+              spaced in total binary mass. The models achieve faithfulness with maximum values in the range of 0.980 to 0.995. We assess our models simulating signals observed by the 
+              three-detector network of Advanced LIGO-Virgo. We find that all models with training sets of size equal to or larger than 40 achieve an unbiased measurement of the main gravitational-wave
+              frequency. We confirm that our results do not depend qualitatively on the choice of the (fixed) equation of state. We conclude that training sets, with a minimum size of 40 simulations, 
+              or a number density of approximately 11 simulations per 0.1 solar mass increment in total binary mass, suffice for the construction of faithful templates for the post-merger signal 
+              for a single equation of state and equal-mass binaries, and lead to mean faithfulness values of approximately 0.95. Our model being based on only one fixed equation of state represents 
+              only a first step towards a method that is fully applicable for gravitational-wave parameter estimation. However, our findings are encouraging since we show that our supervised learning model 
+              built on a set of simulations for a fixed equation of state successfully recovers the main gravitaional-wave features of a simulated signal obtained using another equation of state. 
+              This may indicate that the extension of this model to an arbitrary equation of state may actually be achieved with a manageable set of simulations.
+              </center>
             </p>
             
             <br />
