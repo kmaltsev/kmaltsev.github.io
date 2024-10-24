@@ -57,9 +57,25 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
+  
 }
 p + p {
 
+}
+
+p.event_desc {
+  font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 14px;
+  height:75px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #f00;
+}
+
+p.event_desc2 {
+  line-height:35px;
 }
 
 /**
