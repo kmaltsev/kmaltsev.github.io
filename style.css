@@ -78,6 +78,10 @@ p.event_desc2 {
   line-height:35px;
 }
 
+p.event_desc3 {
+  text-align: justify;
+}
+
 /**
  * Quotes & Blockquotes
  */
