@@ -170,34 +170,51 @@
 
                  <li> Estimation of binary black hole merger rates </li>
                </ol>
-            
+              </div>          
 
             
             <br />
             <br />
             <font color = "yellow">EVOLUTION OF MASSIVE STARS:</font>
             <hr { width:100%; height:1px; background: #fff }>
-            <center>
-            <figure>
-              <img src="stev.png" width = 550>
-              <figcaption>Image caption</figcaption>
-            </figure>
-            </center>
 
-            <p>
-              Many astrophysical applications require efficient yet reliable forecasts of stellar evolution tracks. One example is population synthesis, which generates forward predictions 
-              of models for comparison with observations. The majority of state-of-the-art rapid population synthesis methods are based on analytic fitting formulae to stellar evolution tracks 
-              that are computationally cheap to sample statistically over a continuous parameter range. Running detailed stellar evolution codes, such as MESA, over wide and densely sampled 
-              parameter grids is prohibitively expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
-              prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between cost-efficiency and accuracy. 
-              We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces the evolution of stars from zero age main sequence all the way 
-              to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. The feedforward neural network regression model (first solution) that we train to predict stellar
-              surface variables can make millions of predictions, sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor 
-              interpolation algorithm (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all stellar variables 
-              evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA Isochrones and Stellar Tracks (Choi et al., 2016) data set, 
-              but is independent of the input stellar catalog. Finally, we discuss prospective applications and provide guidelines how to generalize our methods to higher dimensional parameter spaces.
-            </p>
-            <font color = "yellow">Paper reference:</font>  <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
+            <div>
+              <ol>
+                <li> Efficient stellar evolution forecasting up to the end of core helium burning 
+                  <p>
+                    Many astrophysical applications require efficient yet reliable forecasts of stellar evolution tracks. One example is population synthesis, 
+                    which generates forward predictions of models for comparison with observations. The majority of state-of-the-art rapid population synthesis 
+                    methods are based on analytic fitting formulae to stellar evolution tracks that are computationally cheap to sample statistically over a 
+                    continuous parameter range. Running detailed stellar evolution codes, such as MESA, over wide and densely sampled parameter grids is prohibitively 
+                    expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
+                    prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between 
+                    cost-efficiency and accuracy. We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces 
+                    the evolution of stars from zero age main sequence all the way to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. 
+                    The feedforward neural network regression model (first solution) that we train to predict stellar surface variables can make millions of predictions, 
+                    sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor interpolation algorithm 
+                    (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all 
+                    stellar variables evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA 
+                    Isochrones and Stellar Tracks (Choi et al., 2016) data set, but is independent of the input stellar catalog. Finally, we discuss prospective applications 
+                    and provide guidelines how to generalize our methods to higher dimensional parameter spaces. <br />
+                    <font color = "yellow">Paper reference:</font>  <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
+                  </p> 
+                  <center>
+                    <figure>
+                      <img src="stev.png" width = 550>
+                      <figcaption>Image caption</figcaption>
+                    </figure>
+                    </center>             
+                </li>
+                <li> Mass dependence of convective core overshooting </li>
+              </ol>
+              
+            </div>
+
+            
+
+
+
+            
             
           </div>    
           
