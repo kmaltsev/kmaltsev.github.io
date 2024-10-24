@@ -105,9 +105,9 @@
                   as necessary for population synthesis are prohibitive. In this work, we formulate explodability criteria that allow us to predict the final fates of stars by evaluation of multiple 
                   scalar proxies derived from the stellar structure at the onset of core collapse. These criteria are derived from the outcomes of a 1D supernova model evaluated over a super-set of 
                   stellar models consisting of ∼ 3900 heterogeneous stellar progenitors (single stars, binary-stripped stars and accretor stars) and are in broad agreement with those of state-of-art 3D 
-                  core collapse simulation outcomes from two different groups. We further find that all explodability proxies relevant for our pre-SN based criterion show bimodal trends with carbon-oxygen 
+                  core collapse simulation outcomes from two different groups. We further find that all explodability proxies relevant for our pre-SN based criterion show bimodal trends with carbon-oxygen (CO) 
                   core mass formed at the end of core helium burning. The CO core masses shift systematically with metallicity Z and with the timing of hydrogen-rich envelope removal of binary-stripped
-                  stars. We identify critical values in MCO that define windows over which black holes form quietly. The outcome is a CCSN recipe based on CO core mass and Z, applicable for rapid binary 
+                  stars. We identify critical values in CO core mass that define windows over which black holes form quietly. The outcome is a CCSN recipe based on CO core mass and Z, applicable for rapid binary 
                   population synthesis studies. We find that the explodability formalism is consistent with observations of Type IIP and Type IIb/Ib supernova progenitors and partially addresses the missing 
                   red supergiant problem by black hole formation. Moreover, it seems to be in agreement with observations of inferred Type IIn and Type Ic progenitors that other supernova recipes used in 
                   binary population synthesis codes cannot explain. <br /> 
@@ -117,14 +117,10 @@
                   <? <embed src="case-A-ffmap.pdf" width="100px" frameborder="0" />
                   <center>
                     <img src="single-star.png" width = 550 alt = "centered image">
-                  </center>
-
-                  
-                </li>
-
+                  </center>                  
+                </li>  
                 <br />
                 <br />
-
                 <li color = "red"> <font color = "red"> Foundational questions related to black hole formation:</font> 
                     <ul>
                       <li color = "white"> Does the prediction of gravitational singularity formation in stellar gravitational collapse by General Relativity theory indicate its breakdown? 
@@ -134,42 +130,48 @@
                     </ul>
                 </li>
               </ol> 
-            </div>
-            
-
-
-            
+            </div>            
             
             <br />
             <br />
             <font color = "yellow">GRAVITATIONAL WAVE ASTROPHYSICS:</font>
             <hr { width:100%; height:1px; background: #fff }>
-            <center>
-            <figure>
-              <img src="gw.png" width = 550>
-              <figcaption>Image caption</figcaption>
-            </figure>
-            </center>
+
+             <div>
+               <ol>
+                 <li> Gravitational waves from neutron star merger remnants
+
+                  <p>      
+                    We present a time-domain model for the gravitational waves emitted by equal-mass binary neutron star merger remnants i.e., quasi-stable hypermassive
+                    neutron stars, for a fixed equation of state. We construct a large set of numerical relativity simulations for a consistent with current constraints, 
+                    totaling 157 equal-mass binary neutron star merger configurations. The gravitational-wave model is constructed using the supervised learning method of K-nearest 
+                    neighbor regression. As a first step toward developing a general model with supervised learning methods that accounts for the dependencies on equation of state and 
+                    the binary masses of the system, we explore the impact of the size of the dataset on the model. We assess the accuracy of the model for a varied dataset size and 
+                    number density in total binary mass. Specifically, we consider five training sets of {20, 40, 60, 80, 100} simulations uniformly distributed in total binary mass. 
+                    We evaluate the resulting models in terms of faithfulness using a test set of 30 additional simulations that are not used during training and which are equidistantly 
+                    spaced in total binary mass. The models achieve faithfulness with maximum values in the range of 0.980 to 0.995. We assess our models simulating signals observed by the 
+                    three-detector network of Advanced LIGO-Virgo. We find that all models with training sets of size equal to or larger than 40 achieve an unbiased measurement of the main gravitational-wave
+                    frequency. We confirm that our results do not depend qualitatively on the choice of the (fixed) equation of state. We conclude that training sets, with a minimum size of 40 simulations, 
+                    or a number density of approximately 11 simulations per 0.1 solar mass increment in total binary mass, suffice for the construction of faithful templates for the post-merger signal 
+                    for a single equation of state and equal-mass binaries, and lead to mean faithfulness values of approximately 0.95. Our model being based on only one fixed equation of state represents 
+                    only a first step towards a method that is fully applicable for gravitational-wave parameter estimation. However, our findings are encouraging since we show that our supervised learning model 
+                    built on a set of simulations for a fixed equation of state successfully recovers the main gravitaional-wave features of a simulated signal obtained using another equation of state. 
+                    This may indicate that the extension of this model to an arbitrary equation of state may actually be achieved with a manageable set of simulations.          
+                  </p>
+                  <font color = "yellow">Paper reference:</font> <a href = "https://ui.adsabs.harvard.edu/abs/2024arXiv240509513S"> arXiv:2405.09513 </a>                  
             
-            <p>      
-              We present a time-domain model for the gravitational waves emitted by equal-mass binary neutron star merger remnants i.e., quasi-stable hypermassive
-              neutron stars, for a fixed equation of state. We construct a large set of numerical relativity simulations for a consistent with current constraints, 
-              totaling 157 equal-mass binary neutron star merger configurations. The gravitational-wave model is constructed using the supervised learning method of K-nearest 
-              neighbor regression. As a first step toward developing a general model with supervised learning methods that accounts for the dependencies on equation of state and 
-              the binary masses of the system, we explore the impact of the size of the dataset on the model. We assess the accuracy of the model for a varied dataset size and 
-              number density in total binary mass. Specifically, we consider five training sets of {20, 40, 60, 80, 100} simulations uniformly distributed in total binary mass. 
-              We evaluate the resulting models in terms of faithfulness using a test set of 30 additional simulations that are not used during training and which are equidistantly 
-              spaced in total binary mass. The models achieve faithfulness with maximum values in the range of 0.980 to 0.995. We assess our models simulating signals observed by the 
-              three-detector network of Advanced LIGO-Virgo. We find that all models with training sets of size equal to or larger than 40 achieve an unbiased measurement of the main gravitational-wave
-              frequency. We confirm that our results do not depend qualitatively on the choice of the (fixed) equation of state. We conclude that training sets, with a minimum size of 40 simulations, 
-              or a number density of approximately 11 simulations per 0.1 solar mass increment in total binary mass, suffice for the construction of faithful templates for the post-merger signal 
-              for a single equation of state and equal-mass binaries, and lead to mean faithfulness values of approximately 0.95. Our model being based on only one fixed equation of state represents 
-              only a first step towards a method that is fully applicable for gravitational-wave parameter estimation. However, our findings are encouraging since we show that our supervised learning model 
-              built on a set of simulations for a fixed equation of state successfully recovers the main gravitaional-wave features of a simulated signal obtained using another equation of state. 
-              This may indicate that the extension of this model to an arbitrary equation of state may actually be achieved with a manageable set of simulations.
-          
-            </p>
-            <font color = "yellow">Paper reference:</font> <a href = "https://ui.adsabs.harvard.edu/abs/2024arXiv240509513S"> arXiv:2405.09513 </a>
+                  <center>
+                    <figure>
+                      <img src="gw.png" width = 550>
+                      <figcaption>Image caption</figcaption>
+                    </figure>
+                  </center>
+                </li>
+
+                 <li> Estimation of binary black hole merger rates </li>
+               </ol>
+            
+
             
             <br />
             <br />
