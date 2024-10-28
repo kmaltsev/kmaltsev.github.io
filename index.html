@@ -92,6 +92,51 @@
         
           <div id="research" class="content-region hide">
             <h2>Research</h2>
+
+            <font color = "yellow">EVOLUTION OF MASSIVE STARS:</font>
+            <hr { width:100%; height:1px; background: #fff }>
+
+            <div>
+              <ol>
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting up to the end of core helium burning</mark></font> <br />
+                  <p class="event_desc3">
+                    Many astrophysical applications require efficient yet reliable forecasts of stellar evolution tracks. One example is population synthesis, 
+                    which generates forward predictions of models for comparison with observations. The majority of state-of-the-art rapid population synthesis 
+                    methods are based on analytic fitting formulae to stellar evolution tracks that are computationally cheap to sample statistically over a 
+                    continuous parameter range. Running detailed stellar evolution codes, such as MESA, over wide and densely sampled parameter grids is prohibitively 
+                    expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
+                    prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between 
+                    cost-efficiency and accuracy. We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces 
+                    the evolution of stars from zero age main sequence all the way to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. 
+                    The feedforward neural network regression model (first solution) that we train to predict stellar surface variables can make millions of predictions, 
+                    sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor interpolation algorithm 
+                    (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all 
+                    stellar variables evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA 
+                    Isochrones and Stellar Tracks (Choi et al., 2016) data set, but is independent of the input stellar catalog. Finally, we discuss prospective applications 
+                    and provide guidelines how to generalize our methods to higher dimensional parameter spaces. <br />
+                    <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
+                  </p> 
+                  <center>
+                    <figure>
+                      <img src="stev.png" width = 550>
+                      <figcaption>Prediction of isochrones in the Hertzsprung-Russell diagram with
+                           <br /> the deep learning based surrogate model of stellar evolution.</figcaption>
+                    </figure>
+                    </center>             
+                </li>
+                <br />
+                <br />
+                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Mass dependence of convective core overshooting</mark></font> <br />
+                  <p>
+                  In-progress work. Details to follow.
+                  </p> 
+                </li>
+              </ol>
+              
+            </div>
+
+            <br />
+            <br />            
             
             <font color = "yellow">NEUTRON STAR AND BLACK HOLE FORMATION FROM IRON CORE COLLAPSE:</font>
             <hr { width:100%; height:1px; background: #fff }>
@@ -104,8 +149,7 @@
                   behind, or do not explode and form a black hole quietly. The outcome of 3D core collapse supernova (CCSN) simulations depend on the structure of the stellar 
                   progenitor, on the nuclear equation of state and on the treatment of the complex physical ingredients such as neutrino physics and transport, turbulent convection and other
                   instabilities. While the latter are inherently multidimensional phenomena, due to computational cost constraints, 3D simulations over a wide parameter space of stellar progenitors 
-                  as necessary for population synthesis are prohibitive. In this work, we formulate explodability criteria that allow us to predict the final fates of stars, derived from the outcomes 
-                  of a 1D supernova model evaluated over a super-set of stellar models consisting of ∼ 3900 heterogeneous stellar progenitors (single stars, binary-stripped stars and accretor stars). 
+                  as necessary for population synthesis are prohibitive. In this work, we formulate explodability criteria that allow us to predict the final fates of stars already at the pre-SN stage. 
                   We use these to derive a CCSN recipe applicable for rapid binary population synthesis. <br /> 
                   <font color = "orange">(Paper to-be-submitted)</font>   
                   </p>
@@ -177,52 +221,9 @@
                  </p>
                   </li>
                </ol>
-              </div>          
+              </div>            
 
-            
-            <br />
-            <br />
-            <font color = "yellow">EVOLUTION OF MASSIVE STARS:</font>
-            <hr { width:100%; height:1px; background: #fff }>
-
-            <div>
-              <ol>
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting up to the end of core helium burning</mark></font> <br />
-                  <p class="event_desc3">
-                    Many astrophysical applications require efficient yet reliable forecasts of stellar evolution tracks. One example is population synthesis, 
-                    which generates forward predictions of models for comparison with observations. The majority of state-of-the-art rapid population synthesis 
-                    methods are based on analytic fitting formulae to stellar evolution tracks that are computationally cheap to sample statistically over a 
-                    continuous parameter range. Running detailed stellar evolution codes, such as MESA, over wide and densely sampled parameter grids is prohibitively 
-                    expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
-                    prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between 
-                    cost-efficiency and accuracy. We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces 
-                    the evolution of stars from zero age main sequence all the way to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. 
-                    The feedforward neural network regression model (first solution) that we train to predict stellar surface variables can make millions of predictions, 
-                    sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor interpolation algorithm 
-                    (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all 
-                    stellar variables evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA 
-                    Isochrones and Stellar Tracks (Choi et al., 2016) data set, but is independent of the input stellar catalog. Finally, we discuss prospective applications 
-                    and provide guidelines how to generalize our methods to higher dimensional parameter spaces. <br />
-                    <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
-                  </p> 
-                  <center>
-                    <figure>
-                      <img src="stev.png" width = 550>
-                      <figcaption>Prediction of isochrones in the Hertzsprung-Russell diagram with
-                           <br /> the deep learning based surrogate model of stellar evolution.</figcaption>
-                    </figure>
-                    </center>             
-                </li>
-                <br />
-                <br />
-                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Mass dependence of convective core overshooting</mark></font> <br />
-                  <p>
-                  In-progress work. Details to follow.
-                  </p> 
-                </li>
-              </ol>
-              
-            </div>            
+    
             
           </div>    
           
