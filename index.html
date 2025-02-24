@@ -57,7 +57,7 @@
               I am currently looking for a postdoc! <br />
               My research interests are the evolution of massive stars, compact object formation and gravitational wave astrophysics. One of the main tools used in my research is supervised machine learning.<br />
               <br />
-              During my PhD, I have been member of the <a href = "https://www.h-its.org/research/pso/"> <u>Physics of Stellar Objects</u> </a> group at the
+              During my PhD, I have been a member of the <a href = "https://www.h-its.org/research/pso/"> <u>Physics of Stellar Objects</u> </a> group at the
               <a href = "https://www.h-its.org/"> <u>Heidelberg Institute of Theoretical Studies</u></a>
               -- supervised by <a href = "http://www.friedrich-roepke.de/"><u>Prof. Dr. Friedrich Röpke</u></a> and <a href = "https://www.fabian-schneider.com/"><u>Dr. Fabian Schneider</u></a> --        
               and a fellow of the <a href = "https://www.imprs-hd.mpg.de/511334/2024"> <u>International Max Planck Research School for Astronomy and Cosmic Physics</u></a>. <br />
@@ -109,20 +109,12 @@
               <ol>
                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting up to the end of core helium burning</mark></font> <br />
                   <p class="event_desc3">
-                    Many astrophysical applications require efficient yet reliable forecasts of stellar evolution tracks. One example is population synthesis, 
-                    which generates forward predictions of models for comparison with observations. The majority of state-of-the-art rapid population synthesis 
-                    methods are based on analytic fitting formulae to stellar evolution tracks that are computationally cheap to sample statistically over a 
-                    continuous parameter range. Running detailed stellar evolution codes, such as MESA, over wide and densely sampled parameter grids is prohibitively 
-                    expensive computationally, while stellar-age based interpolation in-between sparsely sampled grid points leads to intolerably large systematic 
-                    prediction errors. In this work, we provide two solutions of automated interpolation methods that find satisfactory trade-off points between 
-                    cost-efficiency and accuracy. We construct a timescale-adapted evolutionary coordinate and use it in a two-step interpolation scheme that traces 
-                    the evolution of stars from zero age main sequence all the way to the end of core helium burning while covering a mass range from 0.65 to 300 solar masses. 
-                    The feedforward neural network regression model (first solution) that we train to predict stellar surface variables can make millions of predictions, 
-                    sufficiently accurate over the entire parameter space, within tens of seconds on a 4-core CPU. The hierarchical nearest neighbor interpolation algorithm 
-                    (second solution) that we hard-code to the same end achieves even higher predictive accuracy, the same algorithm remains applicable to all 
-                    stellar variables evolved over time, but it is two orders of magnitude slower. Our methodological framework is demonstrated to work on the MESA 
-                    Isochrones and Stellar Tracks (Choi et al., 2016) data set, but is independent of the input stellar catalog. Finally, we discuss prospective applications 
-                    and provide guidelines how to generalize our methods to higher dimensional parameter spaces. <br />
+                    Many astrophysical studies require efficient yet reliable predictive models of stellar evolution. Examples are iterative optimization-based stellar parameter inference,
+                    population synthesis, stellar <em property="italic">N</em>-body dynamics and large-scale galactic evolution simulations. In this work, we use supervised 
+                    machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium-burning over 
+                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
+                    and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
+                    predictive error orders of magnitude below typical observational uncertainties.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
                   </p> 
                   <center>
