@@ -114,7 +114,7 @@
                     machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium-burning over 
                     a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
                     and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
-                    predictive error orders of magnitude below typical observational uncertainties.<br />
+                    predictive errors orders of magnitude below typical observational uncertainties.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
                   </p> 
                   <center>
@@ -184,22 +184,13 @@
                <ol>
                  <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Gravitational waves from neutron star merger remnants</mark></font> <br />
 
-                  <p class="event_desc3">      
-                    We present a time-domain model for the gravitational waves emitted by equal-mass binary neutron star merger remnants i.e., quasi-stable hypermassive
-                    neutron stars, for a fixed equation of state. We construct a large set of numerical relativity simulations for a consistent with current constraints, 
-                    totaling 157 equal-mass binary neutron star merger configurations. The gravitational-wave model is constructed using the supervised learning method of K-nearest 
-                    neighbor regression. As a first step toward developing a general model with supervised learning methods that accounts for the dependencies on equation of state and 
-                    the binary masses of the system, we explore the impact of the size of the dataset on the model. We assess the accuracy of the model for a varied dataset size and 
-                    number density in total binary mass. Specifically, we consider five training sets of {20, 40, 60, 80, 100} simulations uniformly distributed in total binary mass. 
-                    We evaluate the resulting models in terms of faithfulness using a test set of 30 additional simulations that are not used during training and which are equidistantly 
-                    spaced in total binary mass. The models achieve faithfulness with maximum values in the range of 0.980 to 0.995. We assess our models simulating signals observed by the 
-                    three-detector network of Advanced LIGO-Virgo. We find that all models with training sets of size equal to or larger than 40 achieve an unbiased measurement of the main gravitational-wave
-                    frequency. We confirm that our results do not depend qualitatively on the choice of the (fixed) equation of state. We conclude that training sets, with a minimum size of 40 simulations, 
-                    or a number density of approximately 11 simulations per 0.1 solar mass increment in total binary mass, suffice for the construction of faithful templates for the post-merger signal 
-                    for a single equation of state and equal-mass binaries, and lead to mean faithfulness values of approximately 0.95. Our model being based on only one fixed equation of state represents 
-                    only a first step towards a method that is fully applicable for gravitational-wave parameter estimation. However, our findings are encouraging since we show that our supervised learning model 
-                    built on a set of simulations for a fixed equation of state successfully recovers the main gravitaional-wave features of a simulated signal obtained using another equation of state. 
-                    This may indicate that the extension of this model to an arbitrary equation of state may actually be achieved with a manageable set of simulations. <br />
+                  <p class="event_desc3">
+                    The merger of two neutron stars (NS) results either in prompt collapse to a black hole or in a quasi-stable hypermassive neutron star (HMNS). The HMNS is
+                    supported by differential rotation, thermal effects and repulsive nuclear forces, and continues to emit gravitational waves (GWs) until it either stabilizes or undergoes a delayed collapse to
+                    a black hole. One of the ways to detect GWs on Earth is the matched-filtering technique, which requires efficient GW template models that are scanned 
+                    through the interferometry data in order to find GW signals in a noise background. In this work, we use supervised machine learning methods to construct a time-domain model
+                    for the GWs emitted by HMNSs that remain quasi-stable over at least 17 ms, for two different fixed equations of state: APR4 and SFHX. The model is fast and accurate enough to be
+                    used for real signal searches at advanced LIGO sensitivity.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024arXiv240509513S"> arXiv:2405.09513 </a>   
                   </p>
                                  
