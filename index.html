@@ -58,7 +58,7 @@
               My research interests are the evolution of massive stars, compact object formation and gravitational wave astrophysics. One of the main tools used in my research is supervised machine learning.<br />
               <br />
               During my PhD, I have been a member of the <a href = "https://www.h-its.org/research/pso/"> <u>Physics of Stellar Objects</u> </a> group at the
-              <a href = "https://www.h-its.org/"> <u>Heidelberg Institute of Theoretical Studies</u></a>
+              <a href = "https://www.h-its.org/"> <u>Heidelberg Institute for Theoretical Studies</u></a>
               -- supervised by <a href = "http://www.friedrich-roepke.de/"><u>Prof. Dr. Friedrich Röpke</u></a> and <a href = "https://www.fabian-schneider.com/"><u>Dr. Fabian Schneider</u></a> --        
               and a fellow of the <a href = "https://www.imprs-hd.mpg.de/511334/2024"> <u>International Max Planck Research School for Astronomy and Cosmic Physics</u></a>. <br />
             </p>
@@ -67,7 +67,7 @@
               
             </p>
             <p>
-              Reach out to me via mail! <br /><font color = "yellow">kiril.maltsev@h-its.org </font>
+              You can reach out to me via mail! <br /><font color = "yellow">kiril.maltsev@h-its.org </font>
             </p>
           </div>
           
@@ -109,10 +109,10 @@
               <ol>
                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting up to the end of core helium burning</mark></font> <br />
                   <p class="event_desc3">
-                    Many astrophysical studies require efficient yet reliable predictive models of stellar evolution. Examples are iterative optimization-based stellar parameter inference,
+                    Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are iterative optimization-based stellar parameter inference,
                     population synthesis, stellar <em property="italic">N</em>-body dynamics and large-scale galactic evolution simulations. In this work, we use supervised 
                     machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium-burning over 
-                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
+                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based emulator model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
                     and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
                     predictive errors orders of magnitude below typical observational uncertainties.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
@@ -120,8 +120,11 @@
                   <center>
                     <figure>
                       <img src="stev.png" width = 550>
-                      <figcaption>Prediction of isochrones in the Hertzsprung-Russell diagram with
-                           <br /> the deep learning based surrogate model of stellar evolution.</figcaption>
+                      <figcaption>Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
+                        casted by the machine learning based emulator model. Each colored line shows the position of stars of the same age in the Hertzsprung-Russell diagram, 
+                        which is spanned by the effective temperature <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub><mrow><mtext>T</mtext><mn>eff</mn></mrow></msub></math>
+                        and bolomentric luminosity.
+                      </figcaption>
                     </figure>
                     </center>             
                 </li>
