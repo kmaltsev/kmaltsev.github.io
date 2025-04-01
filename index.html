@@ -143,7 +143,7 @@
                       <img src="img/stev.png" width = 550>
                       <figcaption>
                         <p class="event_desc3">
-                        Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
+                        Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
                         (casted by the machine learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
                         (spanned by the effective temperature T<sub>eff</sub>
                         and bolomentric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
@@ -151,7 +151,10 @@
                         </p>
                       </figcaption>
                     </figure>
-                    </center>             
+                    </center> 
+                  You can download and test out the machine-learning based surrogate models of stellar evolution, which are publicly available in form of a very accessible Jupyter Notebook written in Python on <a href = "https://github.com/kmaltsev/stellar-evolution-emulatorsM"> GitHub </a>. 
+                  In the same repository, you will find in another Jupyter Notebook the coding implementation of the <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm, which is an alternative solution to automated stellar track interpolation up to the end of core-helium-burning that we develop.
+                  It requires access to a stellar evolution catalog but does not require segmentation into evolutionary phases.
                 </li>
                 <br />
                 <br />
@@ -187,7 +190,7 @@
                     <img src="img/single-stars.png" width = 550 alt = "centered image">
                     <figcaption>
                       <p class="event_desc3">
-                      The final fate landscape of massive single stars undergoing iron core collapse, as predicted by CCSN recipe introduced in this work.
+                      Fig. 2: The final fate landscape of massive single stars undergoing iron core collapse, as predicted by CCSN recipe introduced in this work.
                       The compact remnant type is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> and the metallicity
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math>. Similar landscapes are obtained for massive binary-stripped stars.
@@ -236,7 +239,7 @@
                       <img src="/img/gw.png" width = 550>
                       <figcaption>
                         <p class="event_desc3">
-                        Gravitational wave emission from a neutron star merger remnant in the time domain. The output of a numerical relativity simulation is shown in black.
+                        Fig. 3: Gravitational wave emission from a neutron star merger remnant in the time domain. The output of a numerical relativity simulation is shown in black.
                         It is part of the test data set, which the supervised learning model has not seen during the training. The prediction by the fitted supervised learning 
                           model is shown in orange.  
                         </p>
