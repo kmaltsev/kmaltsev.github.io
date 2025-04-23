@@ -58,7 +58,7 @@
           <div id="about" class="content-region hide">
             <h2>About</h2>
             <p>
-              Hello and welcome to my homepage :) 
+              Hello and welcome to my homepage! 
             </p>
             <p>
               I am a recent PhD graduate in Physics at the <a href = "https://www.uni-heidelberg.de/en"> <u>University of Heidelberg</u></a>      
@@ -137,7 +137,7 @@
                   <p class="event_desc3">
                     Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are iterative optimization-based stellar parameter inference,
                     population synthesis, stellar <em property="italic">N</em>-body dynamics and large-scale galactic evolution simulations. In this work, we use supervised 
-                    machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium-burning over 
+                    machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium burning over 
                     a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based emulator model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
                     and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
                     predictive errors orders of magnitude below typical observational uncertainties.<br />
@@ -149,7 +149,7 @@
                       <figcaption>
                         <p class="event_desc3">
                         Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
-                        (casted by the machine learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
+                        (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
                         (spanned by the effective temperature T<sub>eff</sub>
                         and bolomentric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
                         The emulator point predictions are scatter-plotted in black. 
@@ -157,10 +157,10 @@
                       </figcaption>
                     </figure>
                     </center> 
-                  You can test out the machine-learning based surrogate models of stellar evolution, which are publicly available in form of an accessible Jupyter Notebook written 
-                  in Python via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release and in another Jupyter Notebook, you will find the code and demo of the 
+                  You can test out the machine-learning based surrogate models of stellar evolution, which are publicly available in form of a Jupyter Notebook written 
+                  in Python via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you will find in another Jupyter Notebook the code and demo of the 
                   <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm, which is an alternative solution to automated stellar track interpolation 
-                  up to the end of core-helium-burning that we develop. It needs access to a stellar evolution catalog but has the advantage that it does not require segmentation of stellar tracks into 
+                  up to the end of core-helium burning that we develop. It needs access to a stellar evolution catalog but has the advantage that it does not require segmentation of stellar tracks into 
                   evolutionary phases.
                   <a href="https://zenodo.org/records/15224403" target="_blank">
                 <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>
@@ -186,7 +186,7 @@
               <ol> 
                   <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Successful or failed supernova? Neutron star or black hole?</mark></font> <br />
                   <p class="event_desc3">
-                    Massive stars undergoing iron core collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
+                    Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
                     Failure of the neutrino-driven SN mechanism results in black hole formation by direct collapse. Its success leads to a SN explosion, 
                    leaving either a neutron star or a fallback black hole behind. In this work, we formulate explodability criteria that allow to predict the final fates of massive stars already at the pre-SN stage. 
                      We use these to derive a CCSN recipe applicable for rapid binary population synthesis. <br /> 
@@ -199,7 +199,7 @@
                     <img src="img/single-stars.png" width = 550 alt = "centered image">
                     <figcaption>
                       <p class="event_desc3">
-                      Fig. 2: The final fate landscape of massive single stars undergoing iron core collapse, as predicted by CCSN recipe introduced in this work.
+                      Fig. 2: The final fate landscape of massive single stars undergoing iron core collapse, as predicted by the CCSN recipe introduced in this work.
                       The compact remnant type is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> and the metallicity
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math>. Similar landscapes are obtained for massive binary-stripped stars.
@@ -253,7 +253,7 @@
                       <figcaption>
                         <p class="event_desc3">
                         Fig. 3: Gravitational wave emission from a neutron star merger remnant in the time domain. The output of a numerical relativity simulation is shown in black.
-                        It is part of the test data set, which the supervised learning model has not seen during the training. The prediction by the fitted supervised learning 
+                        It is part of the test data set, which the supervised learning model has not seen during the training. The prediction by the fitted supervised-learning 
                           model is shown in orange.  
                         </p>
                       </figcaption>
