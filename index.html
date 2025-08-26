@@ -133,12 +133,12 @@
 
             <div>
               <ol>
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting up to the end of core helium burning</mark></font> <br />
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting over >99.9% of stellar lifetimes.</mark></font> <br />
                   <p class="event_desc3">
-                    Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are iterative optimization-based stellar parameter inference,
-                    population synthesis, stellar <em property="italic">N</em>-body dynamics and large-scale galactic evolution simulations. In this work, we use supervised 
-                    machine learning methods to construct a model predicting the evolutionary sequence from the zero-age-main-sequence up to the end of core-helium burning over 
-                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep learning based emulator model is trained on evolutionary tracks pre-computed with the stellar evolution code MESA, 
+                    Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are stellar <em property="italic">N</em>-body dynamics,
+                    large-scale galactic evolution simulations, iterative optimization-based stellar parameter inference and rapid population synthesis. In this work, we use supervised 
+                    machine learning methods to construct a model predicting stellar evolution from the zero-age-main-sequence up to the end of core-helium burning over 
+                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep-learning model is trained on evolutionary tracks pre-computed with the detailed stellar evolution code MESA, 
                     and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
                     predictive errors orders of magnitude below typical observational uncertainties.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
@@ -151,17 +151,16 @@
                         Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
                         (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
                         (spanned by the effective temperature T<sub>eff</sub>
-                        and bolomentric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
+                        and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
                         The emulator point predictions are scatter-plotted in black. 
                         </p>
                       </figcaption>
                     </figure>
                     </center> 
-                  You can test out the machine-learning based emulator models of stellar evolution, which are publicly available in form of a Jupyter Notebook written 
-                  in Python via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you will find in another Jupyter Notebook the code and demo of the 
-                  <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm, which is an alternative solution to automated stellar track interpolation 
-                  up to the end of core-helium burning that we develop. It needs access to a stellar evolution catalog but has the advantage that it does not require segmentation of stellar tracks into 
-                  evolutionary phases.
+                  You can test out and use the fitted stellar evolution emulator models, these are publicly available in form of a Jupyter Notebook written 
+                  in Python via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you will find the code and demo of the 
+                  <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
+                  up to the end of core-helium burning that we develop, which however needs continued access to a stellar evolution catalog.
                   <a href="https://zenodo.org/records/15224403" target="_blank">
                 <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
                   <br />
@@ -196,7 +195,8 @@
                     Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
                     Failure of the neutrino-driven SN mechanism results in black hole formation by direct collapse. Its success leads to a SN explosion, 
                    leaving behind either a neutron star or a fallback black hole. In this work, we formulate explodability criteria that allow us to predict the final fates of massive stars already at the pre-SN stage. 
-                     We use these and a set of single and binary-stripped star models to derive a CCSN recipe applicable for rapid binary population synthesis and other studies requiring the prediction of SN outcomes at scale. <br /> 
+                     We use these and a set of single and binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
+                    It therefore is applicable for rapid binary population synthesis and other studies requiring the prediction of SN outcomes at scale. <br /> 
                      <a href = https://www.aanda.org/articles/aa/full_html/2025/08/aa54931-25/aa54931-25.html> doi:10.1051/0004-6361/202554931 </a>   
                   </p>
 
@@ -206,18 +206,19 @@
                     <img src="img/single-stars.png" width = 550 alt = "centered image">
                     <figcaption>
                       <p class="event_desc3">
-                      Fig. 2: The final fate landscape of massive single stars undergoing iron core collapse, as predicted by the CCSN recipe introduced in this work.
+                      Fig. 2: The final fate landscape of massive single stars undergoing iron core-collapse, as predicted by the CCSN recipe introduced in this work.
                       The compact remnant type is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> and the metallicity
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math>. Similar landscapes are obtained for massive binary-stripped stars 
-                        that have lost their hydrogen-rich envelope via (Case A / B /C) mass transfer to a companion star.
+                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math> of the star. We find that the direct BH formation thresholds in
+                        <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> of massive binary-stripped stars that lose their hydrogen-rich envelope 
+                        are systematically shifted toward higher masses.
                       </p>
                     </figcaption>
                     </figure>
                   </center>
                     The code for predicting the final fates of stars and discriminating their compact remnant types based on the pre-SN properties using the explodability and fallback 
                     BH formation criteria is publicly available in form of a Jupyter Notebook written in Python via <a href = "https://zenodo.org/records/15046267">Zenodo</a>. In another Notebook, you will find the code implementing
-                    the CCSN recipe for binary population synthesis. <a href="https://zenodo.org/record/15350140" target="_blank">
+                    the CCSN recipe based on global parameters applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
                 <img src="img/doi.png" height = 15 alt="Zenodo DOI">  </a>
                     <br />
                     <br />
@@ -229,7 +230,7 @@
                     In follow-up work, we use this new statistical SN model to re-estimate
 
                     <ul>
-                      <li color = "white"> the chirp mass distribution and the rates of binary black hole mergers observable via gravitational wave astronomy, and </li>
+                      <li color = "white"> the chirp mass distribution of binary black hole mergers observable via gravitational wave astronomy, and </li>
                       <li color = "white"> the SN feedback onto the chemical evolution of a low-metallicity dwarf galaxy. 
                     </ul>
                         
@@ -245,7 +246,7 @@
                     </ul>
                 </li>
                 <br />
-                  <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Stellar progenitor dependence of the kinetic energies of neutrino-driven SN explosions</mark></font> <br />
+                  <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Stellar progenitor dependence of the kinetic energies of neutrino-driven Type II SN explosions</mark></font> <br />
                  <p>
                    In-progress work. Details to follow. 
                  </p>
@@ -265,9 +266,9 @@
                   <p class="event_desc3">
                     The merger of two neutron stars (NS) results either in prompt collapse to a black hole or in a quasi-stable hypermassive neutron star (HMNS). The HMNS is
                     supported by differential rotation, thermal effects and repulsive nuclear forces, and continues to emit gravitational waves (GWs) until it either stabilizes or undergoes a delayed collapse to
-                    a black hole. One of the ways to detect GWs on Earth is the matched-filtering technique, which requires efficient GW template models that are scanned 
-                    through the interferometry data in order to find GW signals in a noise background. In this work, we run numerical relativity simulations of neutron star mergers at variable
-                    total mass up to the threshold mass for prompt collapse. We then use this data for supervised learning to construct a time-domain model
+                    a black hole. One of the ways to detect GWs on Earth is the matched-filtering technique, which requires efficient GW template models. These are scanned 
+                    through the interferometry data in order to dig GW signals out of a noisy background. In this work, we run numerical relativity simulations of neutron star mergers at variable
+                    total mass up to the threshold mass for prompt collapse. We then use this data for supervised learning to fit a time-domain model
                     for the GWs emitted by HMNSs that remain quasi-stable over at least 17 ms, for two different fixed Equations of State: APR4 and SFHX. The model is fast and accurate enough to be
                     used for real signal searches at advanced LIGO sensitivity.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024arXiv240509513S"> doi:10.1103/PhysRevD.111.023002 </a>   
