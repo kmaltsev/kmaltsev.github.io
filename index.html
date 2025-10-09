@@ -132,62 +132,7 @@
           <div id="research" class="content-region hide">
             <h2>Research</h2>
 
-            <font color = "yellow">EVOLUTION OF MASSIVE STARS:</font>
-            <hr { width:100%; height:1px; background: #fff }>
-
-            <div>
-              <ol>
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting during >99.9% of stellar lifetimes</mark></font> <br />
-                  <p class="event_desc3">
-                    Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are stellar <em property="italic">N</em>-body dynamics,
-                    large-scale galactic evolution simulations, iterative optimization-based stellar parameter inference and rapid population synthesis. In this work, we use supervised 
-                    machine learning methods to construct a model predicting stellar evolution from the zero-age-main-sequence up to the end of core-helium burning over 
-                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep-learning model is trained on evolutionary tracks pre-computed with the detailed stellar evolution code MESA, 
-                    and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
-                    predictive errors orders of magnitude below typical observational uncertainties.<br />
-                    <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
-                  </p> 
-                  <center>
-                    <figure>
-                      <img src="img/stev.png" width = 550>
-                      <figcaption>
-                        <p class="event_desc3">
-                        Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
-                        (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
-                        (spanned by the effective temperature T<sub>eff</sub>
-                        and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
-                        The emulator point predictions are scatter-plotted in black. 
-                        </p>
-                      </figcaption>
-                    </figure>
-                    </center> 
-                  If you wish to test out and use the fitted stellar evolution emulator models: these are publicly available in form of a Jupyter Notebook (in Python)
-                  via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you find the code and demo of the 
-                  <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
-                  up to the end of core-helium burning that we develop, which however needs continued access to a stellar evolution catalog and is slower.
-                  <a href="https://zenodo.org/records/15224403" target="_blank">
-                <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
-                  <br />
-                  <br />                  
-                  <center>
-                  <embed src="eas_km.pdf" width="700px" height="351px" />   
-                  </center>
-                  The <em property = "italic">German Physical Society </em> released a <a href="https://www.instagram.com/p/C9Wvqi4qeVL/"><u>social media</u></a> post ( <a href="https://www.instagram.com/p/C9Wvqi4qeVL/" target="_blank">
-                   <img src=  "img/insta.png" height = 20 alt="instagram">  </a>) about this research.
-                </li>
-                <br />
-                <br />
-                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Mass dependence of convective core overshooting</mark></font> <br />
-                  <p>
-                  In-progress work. Details to follow.
-                  </p> 
-                </li>
-              </ol>
-              
-            </div>
-
-            <br />
-            <br />            
+   
             
             <font color = "yellow">NEUTRON STAR AND BLACK HOLE FORMATION FROM IRON CORE-COLLAPSE:</font>
             <hr { width:100%; height:1px; background: #fff }>
@@ -231,7 +176,7 @@
                              <img src="img/sevn.png" height = 45 alt="sevn">  </a> 
                     <br />
                     <br />
-                    In follow-up work, we use this new statistical SN model to re-estimate
+                    I have been involved in follow-up work, in which this new statistical SN model is used to re-estimate
 
                     <ul>
                       <li color = "white"> the <a href = "https://arxiv.org/abs/2508.20787"> chirp mass distribution of binary black hole mergers  </a>  observable via gravitational wave astronomy, and </li>
@@ -302,7 +247,64 @@
                  </p>
                   </li>
                </ol>
-              </div>            
+              </div>  
+
+            <br />
+            <br /> 
+
+                        <font color = "yellow">EVOLUTION OF MASSIVE STARS:</font>
+            <hr { width:100%; height:1px; background: #fff }>
+
+            <div>
+              <ol>
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting during >99.9% of stellar lifetimes</mark></font> <br />
+                  <p class="event_desc3">
+                    Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are stellar <em property="italic">N</em>-body dynamics,
+                    large-scale galactic evolution simulations, iterative optimization-based stellar parameter inference and rapid population synthesis. In this work, we use supervised 
+                    machine learning methods to construct a model predicting stellar evolution from the zero-age-main-sequence up to the end of core-helium burning over 
+                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep-learning model is trained on evolutionary tracks pre-computed with the detailed stellar evolution code MESA, 
+                    and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
+                    predictive errors orders of magnitude below typical observational uncertainties.<br />
+                    <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
+                  </p> 
+                  <center>
+                    <figure>
+                      <img src="img/stev.png" width = 550>
+                      <figcaption>
+                        <p class="event_desc3">
+                        Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
+                        (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
+                        (spanned by the effective temperature T<sub>eff</sub>
+                        and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
+                        The emulator point predictions are scatter-plotted in black. 
+                        </p>
+                      </figcaption>
+                    </figure>
+                    </center> 
+                  If you wish to test out and use the fitted stellar evolution emulator models: these are publicly available in form of a Jupyter Notebook (in Python)
+                  via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you find the code and demo of the 
+                  <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
+                  up to the end of core-helium burning that we develop, which however needs continued access to a stellar evolution catalog and is slower.
+                  <a href="https://zenodo.org/records/15224403" target="_blank">
+                <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
+                  <br />
+                  <br />                  
+                  <center>
+                  <embed src="eas_km.pdf" width="700px" height="351px" />   
+                  </center>
+                  The <em property = "italic">German Physical Society </em> released a <a href="https://www.instagram.com/p/C9Wvqi4qeVL/"><u>social media</u></a> post ( <a href="https://www.instagram.com/p/C9Wvqi4qeVL/" target="_blank">
+                   <img src=  "img/insta.png" height = 20 alt="instagram">  </a>) about this research.
+                </li>
+                <br />
+                <br />
+                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Mass dependence of convective core overshooting</mark></font> <br />
+                  <p>
+                  In-progress work. Details to follow.
+                  </p> 
+                </li>
+              </ol>
+              
+            </div>   
 
     
             
