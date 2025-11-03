@@ -62,7 +62,7 @@
             </p>
             <p>
               I am a recent PhD graduate in Physics at <a href = "https://www.uni-heidelberg.de/en"> <u>Heidelberg University</u></a>.<br />
-              My research interests are the evolution of massive stars, core-collapse supernovae and gravitational wave astrophysics. One of the main tools used in my research is supervised machine learning.<br />
+              My main research interest is the explosion-progenitor connection for neutrino-driven supernovae. Related interests are the evolution of massive stars, gravitational wave astronomy and black hole formation. One of the main tools used in my research is supervised machine learning.<br />
               <br />
               During the PhD, I have been a member of the <a href = "https://www.h-its.org/research/pso/"> <u>Physics of Stellar Objects</u> </a> group at the
               <a href = "https://www.h-its.org/"> <u>Heidelberg Institute for Theoretical Studies</u></a>
@@ -134,7 +134,7 @@
 
    
             
-            <font color = "yellow">NEUTRON STAR AND BLACK HOLE FORMATION FROM IRON CORE-COLLAPSE:</font>
+            <font color = "yellow">NEUTRINO-DRIVEN CORE-COLLAPSE SUPERNOVAE:</font>
             <hr { width:100%; height:1px; background: #fff }>
 
             <div>
@@ -143,9 +143,13 @@
                   <p class="event_desc3">
                     Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
                     Failure of the neutrino-driven SN mechanism results in black hole formation by direct collapse. Its success leads to a SN explosion, 
-                   leaving behind either a neutron star or a black hole. In this work, we formulate explodability criteria that allow us to predict the final fates of massive stars 
-                    at the onset of iron-core infall. We use these criteria and a set of single and binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
-                    It therefore is applicable for rapid binary population synthesis and other studies requiring the prediction of SN outcomes at scale. <br /> 
+                   leaving behind either a neutron star or a black hole. In this work, we formulate explodability criteria that allow us to predict the final fates of massive stars based on 
+                    multiple parameters derived from the stellar structure at the onset of iron-core infall. We use these criteria and a set of single and binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
+                    It therefore is applicable for rapid binary population synthesis and other studies requiring the prediction of SN outcomes at scale. Our explodability formalism shows 
+                    good agreement with 3D CCSN simulation outcomes and is consistent with a number of observational constraints: the direct-imaging HST observations of Type II and Ib SN 
+                    progenitors, the most massive Type Ic SN progenitors inferred from nebular line spectroscopy of SN remnants and SN ejecta masses. It further is consistent with the failed SN
+                    interpretation of the source N6946-BH1 and partially addresses the missing red supergiant problem by direct-collapse black hole formation.                    
+                    <br /> 
                      <a href = https://www.aanda.org/articles/aa/full_html/2025/08/aa54931-25/aa54931-25.html> doi:10.1051/0004-6361/202554931 </a>   
                   </p>
 
@@ -187,7 +191,10 @@
                 </li>  
                 <br />
                 <br />
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Foundational questions related to black hole formation</mark></font> <br />
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Black hole formation and fundamental laws of physics</mark></font> <br />
+                  In a general relativistic treatment of a failed SN, the subsequent BH formation is typically associated with a singularity forming, as the proto-NS – subject to continued
+                  mass accretion – loses stability and contracts. Moreover, BH formation from a collapsing star is typically considered as a violation of the Second Law of of thermodynamics, 
+                  unless quantum-physical effects at the event horizon are taken into account. I addressed the following two questions each by a paper:
                     <ul>
                       <li color = "white"> <em property = "italic">Does the prediction of gravitational singularity formation in stellar gravitational collapse by General Relativity theory indicate its breakdown? </em> <br />
                          <a href="https://ui.adsabs.harvard.edu/abs/2023mgm..conf.3596M"> doi:10.1142/9789811269776_0298 </a>  </li>
@@ -211,16 +218,20 @@
 
              <div>
                <ol>
-                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Gravitational waves from neutron star merger remnants</mark></font> <br />
+                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Towards detection of gravitational waves from neutron star merger remnants</mark></font> <br />
 
                   <p class="event_desc3">
                     The merger of two neutron stars (NS) results either in prompt collapse to a black hole or in a quasi-stable hypermassive neutron star (HMNS). The HMNS is
                     supported by differential rotation, thermal effects and repulsive nuclear forces, and continues to emit gravitational waves (GWs) until it either stabilizes or undergoes a delayed collapse to
-                    a black hole. One of the ways to detect GWs on Earth is the matched-filtering technique, which requires efficient GW template models. These are scanned 
-                    through the interferometry data in order to dig GW signals out of a noisy background. In this work, we run numerical relativity simulations of neutron star mergers at variable
-                    total mass up to the threshold mass for prompt collapse. We then use this data for supervised learning to fit a time-domain model
-                    for the GWs emitted by HMNSs that remain quasi-stable over at least 17 ms, for two different fixed Equations of State: APR4 and SFHX. The model is fast and accurate enough to be
-                    used for real signal searches at advanced LIGO sensitivity.<br />
+                    a black hole. One of the methods for ground-based detection of GWs emitted from cosmic HMNSs is the matched-filtering technique. It requires efficient GW template models that predict 
+                    gravitational waveforms in the time- or frequency-domain as a function of astrophysical source parameters. The templates are scanned through the interferometry data in order
+                    to identify GW signals in a noisy background.             
+                     In this work, we constructed a template model for the GW emission HMNSs remaining quasi-stable for at least 17 ms after the merger, as a function of astrophysical 
+                    source parameters, using numerical relativity simulations and supervised learning techniques. The template model is fast, accurate and noise-robust enough to in future 
+                    be used for real-time signal searches in the interferometry data of the Advanced LIGO detector network at design sensitivity as well as of next-generation detectors. 
+                    Under Advanced LIGO conditions, we confirmed the earlier prediction that the main GW properties (in particular, the dominant and subdominant peak oscillation frequencies)
+                    can be reliably reconstructed up to a source luminosity distance of approximately 12 Mpc, and further found that signal detection is achievable even in the case that
+                    the Equation-of-State (EoS) model adopted in the search template only crudely replicates the actual EoS at source.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024arXiv240509513S"> doi:10.1103/PhysRevD.111.023002 </a>   
                   </p>
                                  
@@ -231,8 +242,7 @@
                       <figcaption>
                         <p class="event_desc3">
                         Fig. 3: Gravitational wave emission from a neutron star merger remnant in the time domain. The output of a numerical relativity simulation is shown in black.
-                        It is part of the test data set, which the supervised learning model has not seen during the training. The prediction by the fitted supervised-learning 
-                          model is shown in orange.  
+                        It is part of the test data set, which the supervised learning model has not seen during the training. The prediction of the template model is shown in orange.  
                         </p>
                       </figcaption>
                     </figure>
