@@ -72,7 +72,7 @@
               Check out <a href = "https://www.h-its.org/projects/emulation-in-simulation-hits-lab/"> <u>this media article</u></a> to find out more about the three papers related to my PhD research.<br />
             </p>
             <p>
-              Apart from stars and black holes, I like to explore different kinds of water sports, experiment with computer art and vegetarian culinary, and to play the violin. Take care! 
+              Apart from stars and black holes, I like exploring different kinds of water sports, experimenting with computer art and vegetarian culinary, and playing the violin. Take care! 
             </p>
             <?Connect with me:?>
             <p>
@@ -144,12 +144,10 @@
                     Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
                     Failure of the neutrino-driven SN mechanism results in black hole (BH) formation. Its success leads to a SN explosion, 
                    leaving behind either a neutron star or a BH. In this work, we formulate explodability criteria that allow us to predict the final fates of massive stars
-                    based on multiple parameters derived from the stellar structure at the onset of iron-core infall. We use these criteria and a set of single and 
+                    based on multiple variables characterizing the stellar structure at the onset of iron-core infall. We use these criteria and a set of single and 
                     binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
-                    It therefore is applicable for rapid binary population synthesis and other studies requiring the prediction of SN outcomes at scale. Our explodability 
-                    formalism shows good agreement with 3D CCSN simulation outcomes and is consistent with a number of observational constraints: the direct-imaging HST observations of Type II and Ib SN 
-                    progenitors, the most massive Type Ic SN progenitors inferred from nebular line spectroscopy of SN remnants and SN ejecta masses. It further is consistent with the failed SN
-                    interpretation of the source N6946-BH1 and partially addresses the missing red supergiant problem by failed SNe.                    
+                    The recipe therefore is applicable for rapid stellar binary population synthesis and other studies requiring the prediction of SN outcomes at scale. Our explodability 
+                    formalism shows good agreement with 3D CCSN simulation outcomes and is consistent with a number of observational constraints from transient astronomy.                    
                     <br /> 
                      <a href = https://www.aanda.org/articles/aa/full_html/2025/08/aa54931-25/aa54931-25.html> doi:10.1051/0004-6361/202554931 </a>   
                   </p>
@@ -173,14 +171,18 @@
                     </figure>
                   </center>
                     The code for predicting the final fates of stars and discriminating their compact remnant types based on the pre-SN properties using the explodability and
-                    fallback-BH formation criteria is publicly available in form of a Jupyter Notebook (in Python) via <a href = "https://zenodo.org/records/15046267">Zenodo</a>. In another Notebook, 
-                    you can find the code implementing  the CCSN recipe that is based on global parameters, applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
+                    fallback-BH formation criteria is available open-source in form of a Jupyter Notebook (in Python) via <a href = "https://zenodo.org/records/15046267">Zenodo</a>. In another Notebook, 
+                    you can find the code implementing the CCSN recipe, applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
                 <img src="img/doi.png" height = 15 alt="Zenodo DOI">  </a>
                     <br />
                     <br />
-                    The CCSN recipe is also readily available in rapid binary population synthesis codes: <picture> <a href="https://compas.science/" target="_blank">                  
-                             <img src="img/compas.png" height = 45 alt="compas" loading = "lazy">  </a> <a href="https://sevncodes.gitlab.io/sevn/index.html" target="_blank">
-                             <img src="img/sevn.png" height = 45 alt="sevn" loading = "lazy">  </a> 
+                    The CCSN recipe is also readily available in rapid binary population synthesis codes: <br /> 
+                    <picture> <a href="https://compas.science/" target="_blank">                
+                                  <img src="img/compas.png" height = 45 alt="compas" loading = "lazy">  </a>
+                              <a href="https://sevncodes.gitlab.io/sevn/index.html" target="_blank">
+                                  <img src="img/sevn.png" height = 45 alt="sevn" loading = "lazy">  </a> 
+                               <a href="https://cosmic-popsynth.github.io/docs/stable/" target="_blank">
+                                  <img src="img/cosmic.png" height = 45 alt="sevn" loading = "lazy">  </a> 
                       </picture>
                     <br />
                     <br />
@@ -202,7 +204,7 @@
                     <ul>
                       <li color = "white"> <em property = "italic">Does the prediction of gravitational singularity formation in stellar gravitational collapse by General Relativity theory indicate its breakdown? </em> <br />
                          <a href="https://ui.adsabs.harvard.edu/abs/2023mgm..conf.3596M"> doi:10.1142/9789811269776_0298 </a>  </li>
-                      <li color = "white"> <em property = "italic">Do classical Schwarzschild black holes transcend the laws of thermodynamics? </em> <br /> 
+                      <li color = "white"> <em property = "italic">Do classical-limit Schwarzschild black holes transcend the laws of thermodynamics? </em> <br /> 
                          <a href = "https://ui.adsabs.harvard.edu/abs/2021ARep...65..976M"> doi:10.1134/S1063772921100218 </a>  </li>                    
                     </ul>
                 </li>
@@ -300,11 +302,11 @@
                       </figcaption>
                     </figure>
                     </center> 
-                  The fitted stellar evolution emulator models are available through a Jupyter Notebook (in Python)
-                  via <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you find the code and demo of the 
+                  The fitted stellar evolution emulator models are available open-source and introduced in a Jupyter Notebook (in Python)
+                  that you can find here: <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you can find the code and a demo of the 
                   <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
                   up to the end of core-helium burning that we develop. It works on any stellar evolution catalog catalog and interpolates any stellar variable of interest that is available in 
-                  the catalog, however, is slower than the ML model.
+                  the catalog, however, is slower than the ML-based emulator model.
                   <a href="https://zenodo.org/records/15224403" target="_blank">
                 <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
                   <br />
