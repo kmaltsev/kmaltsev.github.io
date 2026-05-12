@@ -142,13 +142,14 @@
               <ol> 
                   <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Which stars succeed and which fail to explode?</mark></font> <br />
                   <p class="event_desc3">
-                    Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
-                    Failure of the neutrino-driven SN mechanism results in black hole (BH) formation. Its success leads to a SN explosion, 
-                   leaving behind either a neutron star or a BH. In this work, we formulate an analytical  explodability criteria that allow us to predict the final fates of massive stars
-                    based on multiple variables characterizing stellar structure at the onset of iron-core infall. We use these criteria and a set of single and 
-                    binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
-                    The recipe therefore is applicable for rapid stellar binary population synthesis and other studies requiring the prediction of SN outcomes at scale. Our explodability 
-                    formalism shows good agreement with 3D CCSN simulation outcomes and is consistent with a number of observational constraints from transient astronomy.                    
+                    Massive stars undergoing iron core-collapse at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
+                    The most frequent outcomes are successful explosions, producing Type II or Type Ibc SNe. But some stars fail to explode and continue to collapse until 
+                    a black hole is formed. In this work, we formulate an explosion condition for the neutrino-heating driven SN mechanism (and for its failure) 
+                    using  multiple variables characterizing stellar structure at the onset of iron-core infall. We find that the final fates of massive stars are 
+                    largely pre-determined already at the end of core-helium burning, and derive a simple SN recipe applicable at this stage. The SN recipe predicts
+                    the remnant type (neutron star vs. black hole) given the carbon-oxygen core mass and metallicity, while distinguishing hydrogen-rich envelope retaining vs. envelope-stripped stars.
+                    Our explodability formalism connects to theory of massive star evolution through the advanced burning phases, is in good agreement with 3D core-collapse SN simulation outcomes and consistent with a number of 
+                    observational constraints from transient astronomy.                    
                     <br /> 
                      <a href = https://www.aanda.org/articles/aa/full_html/2025/08/aa54931-25/aa54931-25.html> doi:10.1051/0004-6361/202554931 </a>   
                   </p>
@@ -161,10 +162,10 @@
                      </picture>
                     <figcaption>
                       <p class="event_desc3">
-                      Fig. 2: The final fate landscape of massive single-stars undergoing iron core-collapse, as predicted by the CCSN recipe introduced in this work.
+                      Fig. 2: The final fate landscape of massive single-stars undergoing iron core-collapse, as predicted by the SN recipe introduced in this work.
                       The compact remnant type is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass
                       <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> and the metallicity
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math> of the star. We find that the direct BH formation thresholds in
+                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math> of the star. We find that the BH formation bands in
                         <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> of massive binary-stripped stars that lose their hydrogen-rich envelope 
                         are systematically shifted toward higher masses.
                       </p>
@@ -173,7 +174,7 @@
                   </center>
                     The code for predicting the final fates of stars and discriminating their compact remnant types based on the pre-SN properties using the explodability and
                     fallback-BH formation criteria is available open-source in form of a Jupyter Notebook (in Python) via <a href = "https://zenodo.org/records/15046267">Zenodo</a>. In another Notebook, 
-                    you can find the code implementing the CCSN recipe, applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
+                    you can find the code implementing the SN recipe, applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
                 <img src="img/doi.png" height = 15 alt="Zenodo DOI">  </a>
                     <br />
                     <br />
@@ -237,7 +238,7 @@
                     order to identify GW signals in a noisy background.             
                      In this work, we constructed a template model for the GW emission from HMNSs remaining quasi-stable for at least 17 ms after the merger, as a function of astrophysical 
                     source parameters, using numerical relativity simulations and supervised learning techniques. The template model is fast, accurate and noise-robust enough to in future 
-                    be used for real-time signal searches in the interferometry data of the Advanced LIGO detector network at design sensitivity as well as of next-generation detectors. 
+                    be used for signal searches in the interferometry data of the Advanced LIGO detector network at design sensitivity as well as of next-generation detectors. 
                     Under Advanced LIGO conditions, we confirmed the earlier prediction that the main GW properties (in particular, the dominant and subdominant peak oscillation frequencies)
                     can be reliably reconstructed up to a source luminosity distance of approximately 12 Mpc, and further found that signal detection is achievable even in the case that
                     the Equation-of-State (EoS) model adopted in the search template only crudely replicates the actual EoS at source.<br />
@@ -287,7 +288,7 @@
                     parameter space: it traces stellar evolution from the zero-age-main-sequence up to the end of core-helium burning while covering 
                     a mass range from red dwarves to 300 solar-mass star. Its main advantage over classical interpolation of stellar model grids is the speed-up, as it casts millions of predictions 
                     within tens of seconds on a 4-core CPU, while keeping the predictive errors orders of magnitude below typical observational uncertainties. In ongoing work, we use it to estimate 
-                    the Initial-Mass-Function of solar-metallicity stellar populations.<br />
+                    the Initial-Mass-Function of observed solar-metallicity stellar populations.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
                   </p> 
                   <center>
@@ -298,10 +299,9 @@
                       <figcaption>
                         <p class="event_desc3">
                         Fig. 1: Comparison of theoretical isochrones (computed using the stellar evolution code MESA) with the point predictions 
-                        (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
+                        (casted by the ML-based surrogate model; scatter-plotted in black). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
                         (spanned by the effective temperature T<sub>eff</sub>
-                        and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
-                        The point predictions casted by the deep-learning surrogate model are scatter-plotted in black. 
+                        and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br />                          
                         </p>
                       </figcaption>
                     </figure>
@@ -310,7 +310,7 @@
                   that you can find here: <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you can find the code and a demo of the 
                   <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
                   up to the end of core-helium burning that we develop. It works on any stellar evolution catalog catalog and interpolates any stellar variable of interest that is available in 
-                  the catalog, however, is slower than the ML-based emulator model.
+                  the catalog, however, is slower than the ML-based surrogate model.
                   <a href="https://zenodo.org/records/15224403" target="_blank">
                 <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
                   <br />
@@ -352,7 +352,7 @@
                         
             <div>
               <ul>
-              <font color = "yellow">DEGREES EDUCATION:</font>
+              <font color = "yellow">DEGREES:</font>
               <hr { width:100%; height:1px; background: #fff }>  
                 <li> <b>PhD in Physics</b>, Heidelberg University (Germany), 2020 - 2014 </li>
                 <li> <b>Master of Studies in Philosophy of Physics</b>, University of Oxford (UK), 2018 - 2019 </li>
