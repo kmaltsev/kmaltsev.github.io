@@ -144,8 +144,8 @@
                   <p class="event_desc3">
                     Massive stars undergoing iron core-collapse (CC) at the end of their evolution terminate their lives either in successful or failed supernovae (SNe). 
                     Failure of the neutrino-driven SN mechanism results in black hole (BH) formation. Its success leads to a SN explosion, 
-                   leaving behind either a neutron star or a BH. In this work, we formulate explodability criteria that allow us to predict the final fates of massive stars
-                    based on multiple variables characterizing the stellar structure at the onset of iron-core infall. We use these criteria and a set of single and 
+                   leaving behind either a neutron star or a BH. In this work, we formulate an analytical  explodability criteria that allow us to predict the final fates of massive stars
+                    based on multiple variables characterizing stellar structure at the onset of iron-core infall. We use these criteria and a set of single and 
                     binary-stripped star models to derive a CCSN recipe based on global stellar parameters that are determined already at the end of core-helium burning. 
                     The recipe therefore is applicable for rapid stellar binary population synthesis and other studies requiring the prediction of SN outcomes at scale. Our explodability 
                     formalism shows good agreement with 3D CCSN simulation outcomes and is consistent with a number of observational constraints from transient astronomy.                    
@@ -202,11 +202,10 @@
                 <br />
                 <br />
                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Black hole formation and fundamental laws of physics</mark></font> <br />
-                  In a general relativistic treatment of a failed SN, the subsequent BH formation is typically associated with a singularity forming, as the proto-NS – subject to continued
-                  mass accretion – loses stability and contracts. Moreover, BH formation from a collapsing star is typically considered as a violation of the Second Law of of thermodynamics, 
-                  unless quantum-physical effects at the event horizon are taken into account. I addressed the following two questions each by a paper:
+                  In a failed SN, the proto-NS accretes infalling mass until it loses stability and collapses. In a general-relativistic treatment of gravitational collapse, matter disappears behind the event horizon, 
+                  the Second Law of Thermodynamics is violated, and one or even multiple gravitational singularities form (geodesic incompleteness, infinite curvature, ...).  I addressed the following two questions each by a paper:
                     <ul>
-                      <li color = "white"> <em property = "italic">Does the prediction of gravitational singularity formation in stellar gravitational collapse by General Relativity theory indicate its breakdown? </em> <br />
+                      <li color = "white"> <em property = "italic">Does the prediction of singularity formation in stellar gravitational collapse indicate the breakdown of General Relativity theory? </em> <br />
                          <a href="https://ui.adsabs.harvard.edu/abs/2023mgm..conf.3596M"> doi:10.1142/9789811269776_0298 </a>  </li>
                       <li color = "white"> <em property = "italic">Do classical-limit Schwarzschild black holes transcend the laws of thermodynamics? </em> <br /> 
                          <a href = "https://ui.adsabs.harvard.edu/abs/2021ARep...65..976M"> doi:10.1134/S1063772921100218 </a>  </li>                    
@@ -264,7 +263,7 @@
                  <br />
                  <br />         
 
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Equation-of-State dependence of the maximal NS mass</mark></font> <br />
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> The maximal NS mass dependence on the Equation-of-State of dense neutron-rich matter</mark></font> <br />
                  <p>
                    In-progress work. Details to follow. 
                  </p>
@@ -283,11 +282,12 @@
                 <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> Efficient stellar evolution forecasting during >99.9% of stellar lifetimes</mark></font> <br />
                   <p class="event_desc3">
                     Many astrophysical studies require efficient but reliable predictive models of stellar evolution. Examples are stellar <em property="italic">N</em>-body dynamics,
-                    large-scale galactic evolution simulations, iterative optimization-based stellar parameter inference and rapid population synthesis. In this work, we use supervised 
-                    machine learning methods to construct a model predicting stellar evolution from the zero-age-main-sequence up to the end of core-helium burning over 
-                    a mass range from red dwarves to the most massive Wolf-Rayet stars. The deep-learning model is trained on evolutionary tracks pre-computed with the detailed stellar evolution code MESA, 
-                    and acquires the capability to generalize predictions over a continuous parameter space. It casts millions of predictions within tens of seconds on a 4-core CPU, while keeping the 
-                    predictive errors orders of magnitude below typical observational uncertainties. It can be used, for example, to estimate the Initial-Mass-Function of a stellar population.<br />
+                    large-scale galactic evolution simulations, iterative optimization-based stellar parameter inference and rapid population synthesis. In this work, we constuct a deep-learning 
+                    based surrogate model of stellar evolution, trained on evolutionary tracks pre-computed with the detailed stellar evolution code MESA while generalizing predictions over a continuous 
+                    parameter space: it traces stellar evolution from the zero-age-main-sequence up to the end of core-helium burning while covering 
+                    a mass range from red dwarves to 300 solar-mass star. Its main advantage over classical interpolation of stellar model grids is the speed-up, as it casts millions of predictions 
+                    within tens of seconds on a 4-core CPU, while keeping the predictive errors orders of magnitude below typical observational uncertainties. In ongoing work, we use it to estimate 
+                    the Initial-Mass-Function of solar-metallicity stellar populations.<br />
                     <a href = "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..86M"> doi:10.1051/0004-6361/202347118 </a>
                   </p> 
                   <center>
@@ -301,7 +301,7 @@
                         (casted by the machine-learning based emulator model). Each color-coded isochrone shows the position of stars of the same age in the Hertzsprung-Russell diagram 
                         (spanned by the effective temperature T<sub>eff</sub>
                         and bolometric luminosity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>L</mtext></mrow></math>).<br /> 
-                        The emulator point predictions are scatter-plotted in black. 
+                        The point predictions casted by the deep-learning surrogate model are scatter-plotted in black. 
                         </p>
                       </figcaption>
                     </figure>
