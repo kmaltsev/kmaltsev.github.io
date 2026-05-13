@@ -158,17 +158,16 @@
                   <center>
                     <figure>
                       <picture>
-                    <img src="img/single-stars.png" width = 550 alt = "centered image" loading = "lazy">
+                    <img src="img/ccsn-recipe.png" width = 550 alt = "centered image" loading = "lazy">
                      </picture>
                     <figcaption>
                       <p class="event_desc3">
-                      Fig. 2: The final fate landscape of massive single-stars undergoing iron core-collapse, as predicted by the SN recipe introduced in this work.
-                      The compact remnant type is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> and the metallicity
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math> of the star. We find that the BH formation bands in
-                        <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> of massive binary-stripped stars that lose their hydrogen-rich envelope 
-                        are systematically shifted toward higher masses.
-                      </p>
+                      Fig. 2: The final fate landscape of massive stars undergoing iron core-collapse, as predicted by the SN recipe introduced in this work.
+                      The compact remnant left behind is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass,
+                        <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math>, and the metallicity, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math>. 
+                    We find that the BH formation bands in
+                        <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math> of massive binary-stripped stars, which lose their hydrogen-rich envelope (here: "Case B"), 
+                        are systematically shifted toward higher masses compared to single-stars. This makes BH formation from stripped stars a much rarer process than assumed in many previous works on statistical SN modeling.
                     </figcaption>
                     </figure>
                   </center>
@@ -178,7 +177,7 @@
                 <img src="img/doi.png" height = 15 alt="Zenodo DOI">  </a>
                     <br />
                     <br />
-                    The SN model is also readily available in a number of stellar binary population synthesis codes: <br /> 
+                    The SN recipe is available in several stellar binary population synthesis codes: <br /> 
                     <picture> <a href="https://compas.science/" target="_blank">                
                                   <img src="img/compas.png" height = 45 alt="compas" loading = "lazy">  </a>
                               <a href="https://sevncodes.gitlab.io/sevn/index.html" target="_blank">
@@ -193,7 +192,7 @@
                     I am currently involved in studies in which this new statistical SN model is used to predict ...
 
                     <ul>
-                      <li color = "white"> <a href = "https://arxiv.org/abs/2510.07573"> binary black hole mergers</a> and compare with their gravitational wave observations, </li>
+                      <li color = "white"> <a href = "https://arxiv.org/abs/2510.07573"> binary black hole mergers</a> and to compare with their gravitational wave observations from the latest GWTC-4 data release, </li>
                       <li color = "white"> the local, galactic and near-Earth SN explosion rates and the BH number count in the Milky Way (<em property = "italic">Quintana et al., in prep.</em>),
                       <li color = "white"> the dynamical SN feedback onto the chemical evolution of a low-metallicity dwarf galaxy (<em property = "italic">Lahén et al., in prep.</em>), and 
                       <li color = "white"> the diffuse supernova neutrino background, filled by (anti)-neutrino emission from successful and failed SNe (<em property = "italic">Kresse et al., in prep.</em>).</li> 
@@ -254,18 +253,18 @@
                       </picture>
                       <figcaption>
                         <p class="event_desc3">
-                        Fig. 3: Gravitational wave emission from a neutron star merger remnant in the time domain. The output of a numerical relativity simulation is shown in black.
+                        Fig. 3: GW emission from a NS merger remnant in time-domain. The output of a numerical relativity simulation is shown in black.
                         It is part of the test data set, which the supervised learning model has not seen during the training. The prediction of the template model is shown in orange.  
                         </p>
                       </figcaption>
                     </figure>
                   </center>
-                   You can download the gravitational wave model for the APR4 Equation-of-State from <a href = "https://git.gsi.de/t.soultanis/apr4_knn_gw_model_2024"> GitLab</a> and test it out using a simple Python script.                   
+                   A simple open-source Python script for testing the time-domain GW model for the APR4 Equation-of-State: <a href = "https://git.gsi.de/t.soultanis/apr4_knn_gw_model_2024"> GitLab</a>.                   
                 </li>
                  <br />
                  <br />         
 
-                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> The maximal NS mass dependence on the Equation-of-State of dense neutron-rich matter</mark></font> <br />
+                <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> The maximal NS mass dependence on the EoS of dense neutron-rich matter</mark></font> <br />
                  <p>
                    In-progress work. Details to follow. 
                  </p>
@@ -307,11 +306,10 @@
                       </figcaption>
                     </figure>
                     </center> 
-                  The fitted stellar evolution emulator models are available open-source and introduced in a Jupyter Notebook (in Python)
-                  that you can find here: <a href = "https://zenodo.org/records/15224403">Zenodo</a>. In the same release, you can find the code and a demo of the 
+                  The fitted stellar-evolution surrogate model is available open-source, along with a Jupyter Notebook tutorial on how to use it: <a href = "https://zenodo.org/records/15224403">Zenodo</a>. 
+                  In the same release, you can find the code and a demo of the 
                   <em property = "italic"> Hierarchical Nearest-Neighbor Interpolation </em> (HNNI) algorithm: it is an alternative solution to automated stellar track interpolation 
-                  up to the end of core-helium burning that we develop. It works on any stellar evolution catalog catalog and interpolates any stellar variable of interest that is available in 
-                  the catalog, however, is slower than the ML-based surrogate model.
+                  up to the end of core-helium burning that we develop. It interpolates any stellar variable of interest from a stellar evolution model grid. More general and accurate but slower than the ML-based surrogate model.
                   <a href="https://zenodo.org/records/15224403" target="_blank">
                 <img src="img/zenodo_stev.png" height = 16 alt="Zenodo DOI">  </a>           
                   <br />
