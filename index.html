@@ -163,7 +163,7 @@
                     The most frequent outcomes are successful explosions, producing Type II or Type Ibc SNe. Though some stars fail to explode and continue to collapse until 
                     a black hole is formed. In this work, we formulate an explosion condition for the neutrino-heating driven SN mechanism (and for its failure) 
                     using  multiple variables characterizing stellar structure at the onset of iron-core infall. We find that the final fates of massive stars are 
-                    largely pre-determined already at the end of core-helium burning, and derive a simple core-collapse SN recipe applicable at this stage. The SN recipe predicts
+                    largely pre-determined already at the end of core-helium burning, and derive a simple core-collapse SN recipe applicable at this stage (hereafter: M25). M25 predicts
                     the remnant type (neutron star vs. black hole) given the carbon-oxygen core mass and metallicity, while distinguishing hydrogen-rich envelope retaining vs. envelope-stripped stars.
                     Our explodability formalism connects to theory of massive star evolution through the advanced burning phases, is in good agreement with 3D core-collapse SN simulation outcomes and consistent with a number of 
                     observational constraints from transient astronomy.                    
@@ -179,7 +179,7 @@
                      </picture>
                     <figcaption>
                       <p class="event_desc3">
-                      <u>Fig. 1</u>: The final fate landscape of massive stars undergoing iron core-collapse, as predicted by the SN recipe introduced in this work.
+                      <u>Fig. 1</u>: The final fate landscape of massive stars undergoing iron core-collapse, as predicted by the SN recipe introduced in this work (M25).
                       The compact remnant left behind is color-coded (NS = neutron star, BH = black hole) in a diagram spanned by the carbon-oxygen core mass,
                         <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>M</mtext><sub>CO</sub></mrow></math>, and the metallicity, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>Z</mtext></mrow></math>. 
                     We find that the BH formation bands in
@@ -190,7 +190,7 @@
                   </center>
                     The code for predicting the final fates of stars and discriminating their compact remnant types based on the pre-SN properties using the explodability and
                     fallback-BH formation criteria is available open-source in form of a Jupyter Notebook (in Python) via <a href = "https://zenodo.org/records/15046267">Zenodo</a>. In another Notebook, 
-                    you can find the code implementing the SN recipe, applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
+                    you can find the code implementing the SN recipe (M25), applicable at the end of core-helium burning. <a href="https://zenodo.org/record/15350140" target="_blank">
                 <img src="img/doi.png" height = 15 alt="Zenodo DOI">  </a>
                     <br />
                     <br />
@@ -209,7 +209,7 @@
                     In recent work, we have used the new statistical SN model to predict cosmic binary BH mergers  
                     and to compare predictions with available gravitational wave data of observed merger events (most recent <i>GWTC-5</i> data release). We find that
                     the bimodal BH formation pattern predicted by our model imprints a trimodal peak-trough structure onto the distribution of chirp masses of 
-                    binary BH (BBH) mergers over the low-mass range dominated by the isolated binary evolution BBH progenitor channel (below 30 solar masses), and see 
+                    binary BH (BBH) mergers over the low-mass range dominated by the isolated binary evolution BBH progenitor channel (below 30 solar masses), and find 
                     evidence for this feature in the observational data (see Fig. 2). 
                     <br /> 
                      <a href = "https://ui.adsabs.harvard.edu/abs/2025arXiv251007573W/abstract"> doi:10.48550/arXiv.2510.07573 </a> 
@@ -223,7 +223,7 @@
                         <p class="event_desc3">
                         <u>Fig. 2</u>: Comparison of binary population synthesis predictions of the distribution of BBH merger chirp masses (in red) and their gravitational wave 
                           observations (in grey) after the latest <i>GWTC-5</i> data release. The grey-shaded bands show observational uncertainties while the red bands show variations 
-                          in the adopted binary evolution physics model (left panels) and the cosmic star formation history model (right panels). The only difference between the
+                          in the adopted binary evolution physics (left panels) and the cosmic star formation history (right panels) models. The only difference between the
                           panels from top to bottom is the choice of the SN model (<i>Maltsev 25, Fryer 12, </i> ...) in an otherwise identical population synthesis setup. Our SN model
                           robustly predicts a dip at around 10 solar masses that is confirmed by observations. Competing SN models overpredict the abundance of BBH mergers.    
                         </p>
@@ -266,10 +266,12 @@
                     <li> <font color = "orange" size = "3.9" weight = "bold"> <mark style="background-color:burlywood;"> The baryon cycle in low-metallicity dwarf galaxies</mark></font> <br />
                  <p>
                    Core-collapse supernovae (CCSNe) are a critical source of thermal and kinetic energy and chemically enriched material in galaxies.  We ran simulations of isolated low-metallicity galaxies 
-                   with a stellar-core mass and metallicity-dependent model for explodability of CCSNe (M25) and explosion energies, calibrated to 3D CCSN simulation outcomes. While BH formation contributes 
+                   with an extension of M25 that -beyond explodability- pedicts the CCSN explosion energy,  <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>E</mtext><sub>expl</sub></mrow></math>,
+                   as a function of stellar-core mass and metallicity. The explosion-progenitor connection is calibrated to 3D CCSN simulation outcomes, such that 
+                   <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>E</mtext><sub>expl</sub></mrow></math> varies between < 0.1 and 2 B. While BH formation contributes 
                    to removal of matter from the galactic baryon cycle, the latter remains driven by galactic outflows, and most compact remnant mass is stored in white dwarves. The most significant change 
-                   is instead brought about by the new average-explosion energy that amounts to ∼33% of the 1 B  traditionally assumed in lower-resolution galaxy simulations. This reduction results in 
-                   increased and less bursty star formation, reduced outflows and mass-loading factors, increased star cluster formation efficiency, enhanced metal-recycling in star-forming regions and faster 
+                   is instead brought about by the new average-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>E</mtext><sub>expl</sub></mrow></math> that amounts to ∼33% of the 1 B  traditionally
+                     assumed in lower-resolution galaxy simulations. This reduction results in increased and less bursty star formation, reduced outflows and mass-loading factors, increased star cluster formation efficiency, enhanced metal-recycling in star-forming regions and faster 
                    chemical enrichment.
                  </p>
 
@@ -281,8 +283,9 @@
                       <figcaption>
                         <p class="event_desc3">
                         <u>Fig. 3</u>: The star formation (SFR; left panel), galactic mass outflow (OFR; central panel) and CCSN explosion (right panel) rates, averaged over 10 Myr bins,
-                          in a dwarf galaxy simulated for 1 Gyr. The curves show simulation outcomes with the new "M25, variable E" explosion energy and other CCSN feedbacks model, including
-                          the "Original, 1 B", according to which each CCSN explosion event has 1 B energy. The SFR and CCSN explosion rates increase but the OFR decreases, as the explosion energy is lowered.
+                          in a dwarf galaxy simulated for 1 Gyr. The outcomes strongly vary depending on the choice of the CCSN feedback model: the curves show results for the new "M25, variable E" 
+                          and the "Original, 1 B" models, according to which each CCSN explosion event has 1 B energy. The SFR and CCSN explosion rates increase but the OFR decreases, as the 
+                          average-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow><mtext>E</mtext><sub>expl</sub></mrow></math> is lowered.
                         </p>
                       </figcaption>
                     </figure>
